@@ -38,6 +38,25 @@ namespace ForLoop
                 }
                 Console.Write('\n');
             }
+
+            //3. Pirámide de * centrada
+            Console.WriteLine("Ingrese el tamaño de la pirámide");
+            int altura = Convert.ToInt32(Console.ReadLine());
+            for (int y = 1; y <= altura; y++)
+            {
+                for (int x = 1; x <= altura - y; x++) //imprime espacios hasta el espacio altura-y
+                {
+                    Console.Write(" ");
+                }
+
+                //imprimimos * con espacio
+                for(int x = 1; x <= y; x++)
+                {
+                    Console.Write("* ");
+                }
+
+                Console.WriteLine();
+            }
         }
     }
 }
