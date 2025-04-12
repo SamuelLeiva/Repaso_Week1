@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Boardgame bg = new Boardgame("Magic", "Juego de cartas", "Richard Garfield", "30 min", 9.5);
+
+            bg.Title = "Yu gi Oh";
+
+            Console.WriteLine(bg.Title);
         }
     }
 }
