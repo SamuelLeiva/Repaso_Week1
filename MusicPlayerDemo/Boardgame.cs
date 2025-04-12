@@ -42,11 +42,11 @@ namespace MusicPlayerDemo
 
         public Boardgame(string title, string description,  string author, string duration, double grade)
         {
-            Title = title; 
-            Description = description;
-            Author = author; 
-            Duration = duration;
-            Grade = grade;
+            this.title = title; 
+            this.description = description;
+            this.author = author; 
+            this.duration = duration;
+            this.grade = grade;
         }
 
         //public string getTitle()
