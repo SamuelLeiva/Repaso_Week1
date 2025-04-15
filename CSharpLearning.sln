@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repaso_Modulo1", "Repaso_Mo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicPlayerDemo", "MusicPlayerDemo\MusicPlayerDemo.csproj", "{8325A68A-1D1B-432E-B661-6E454D157490}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repaso_OOP", "Repaso_OOP\Repaso_OOP.csproj", "{73DD2537-ADEA-451E-B7B8-3FBADC4F3191}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{8325A68A-1D1B-432E-B661-6E454D157490}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8325A68A-1D1B-432E-B661-6E454D157490}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8325A68A-1D1B-432E-B661-6E454D157490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73DD2537-ADEA-451E-B7B8-3FBADC4F3191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73DD2537-ADEA-451E-B7B8-3FBADC4F3191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73DD2537-ADEA-451E-B7B8-3FBADC4F3191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73DD2537-ADEA-451E-B7B8-3FBADC4F3191}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
