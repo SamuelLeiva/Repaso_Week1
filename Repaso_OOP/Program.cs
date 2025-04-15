@@ -6,25 +6,9 @@ namespace Repaso_OOP
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-        }
+            Boardgame bg1 = new Boardgame("Gloomhaven", "Isaac Childres", 8.7, 120, 3.8);
 
-        public class Song()
-        {
-            public string name;
-            public string artist;
-            public string genre;
-            public string albumName;
-            public int durationSeconds;
-
-            public Song(string name, string artist, string genre, string albumName, int durationSeconds) : this()
-            {
-                this.name = name;
-                this.artist = artist;
-                this.genre = genre;
-                this.albumName = albumName;
-                this.durationSeconds = durationSeconds;
-            }
+            Console.WriteLine($"Titulo: {bg1.Title}");
         }
     }
 }

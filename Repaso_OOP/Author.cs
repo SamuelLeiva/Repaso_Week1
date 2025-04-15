@@ -11,7 +11,7 @@ namespace Repaso_OOP
         private string _name;
         private string _lastname;
         private int _age;
-        private string[] _games;
+        private HashSet<string> _games;
 
         public string Name {
             get { return _name; }
@@ -30,13 +30,23 @@ namespace Repaso_OOP
             set { _age = value; }
         }
 
-        public string[] Games
+        public HashSet<string> Games
         {
             get { return _games; }
-            set { _games = value; }
+            set 
+            { 
+                if(_games.Count > 0)
+                {
+                    _games = value;
+                } else
+                {
+                    _games = new HashSet<string>();
+                }
+                
+            }
         }
 
-        public Author(string _name, string _lastname,  int _age, string[] _games)
+        public Author(string _name, string _lastname,  int _age, HashSet<string> _games)
         {
             this._name = _name;
             this._lastname = _lastname;

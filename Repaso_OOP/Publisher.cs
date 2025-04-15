@@ -10,8 +10,8 @@ namespace Repaso_OOP
     {
         private string _name;
         private string _country;
-        private string[] _games;
-        private string[] _authors;
+        private HashSet<string> _games;
+        private HashSet<string> _authors;
 
         public string Name
         {
@@ -25,19 +25,39 @@ namespace Repaso_OOP
             set { _country = value; }
         }
 
-        public string[] Games
+        public HashSet<string> Games
         {
             get { return _games; }
-            set { _games = value; }
+            set 
+            {
+                if (_games.Count > 0)
+                {
+                    _games = value;
+                }
+                else
+                {
+                    _games = new HashSet<string>();
+                }
+            }
         }
 
-        public string[] Authors
+        public HashSet<string> Authors
         {
             get { return _authors; }
-            set { _authors = value; }
+            set
+            {
+                if (_authors.Count > 0)
+                {
+                    _authors = value;
+                }
+                else
+                {
+                    _authors = new HashSet<string>();
+                }
+            }
         }
 
-        public Publisher(string _name, string _country, string[] _games, string[] _authors)
+        public Publisher(string _name, string _country, HashSet<string> _games, HashSet<string> _authors)
         {
             this._name = _name;
             this._country = _country;
